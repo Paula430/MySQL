@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<classes>
+    <clients>
+        <client id="1">
+            <name>John</name>
+            <lastname>Cherry</lastname>
+            <email>john@example.com</email>
+            <phonenumber>123456789</phonenumber>
+        </client>
+        <client id="2">
+            <name>Bob</name>
+            <lastname>Brown</lastname>
+            <email>bob@example.com</email>
+            <phonenumber>987654321</phonenumber>
+        </client>
+    </clients>
+    <employees>
+        <employee id="1">
+            <firstname>Alice</firstname>
+            <lastname>Johnson</lastname>
+            <email>alice@example.com</email>
+            <phone>123567895</phone>
+            <hiredate>2020-03-10</hiredate>
+            <department id="1">
+                <name>HR</name>
+                <location id="1">
+                    <city>Cracow</city>
+                    <street>Larch Row</street>
+                </location>
+            </department>
+        </employee>
+        <employee id="2">
+            <firstname>Jane</firstname>
+            <lastname>Smith</lastname>
+            <email>jane@example.com</email>
+            <phone>111111111</phone>
+            <hiredate>2010-03-10</hiredate>
+            <department id="2">
+                <name>IT</name>
+                <location id="2">
+                    <city>Tokyo</city>
+                    <street>Elm Street</street>
+                </location>
+            </department>
+        </employee>
+    </employees>
+    <user id="1">
+        <name>Alex</name>
+        <email>alex.example.com</email>
+        <password>alex1111</password>
+        <role id="1">
+            <rolename>admin</rolename>
+        </role>
+    </user>
+</classes>
