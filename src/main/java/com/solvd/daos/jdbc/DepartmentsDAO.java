@@ -22,7 +22,7 @@ public class DepartmentsDAO implements IDepartmentDAO {
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 department.setName(rs.getString("name"));
-                department.setLocationID(rs.getInt("locations_id"));
+                //department.setLocationID(rs.getInt("locations_id"));
                 department.setId(rs.getInt("id"));
             }
         } catch (SQLException e) {
@@ -45,7 +45,7 @@ public class DepartmentsDAO implements IDepartmentDAO {
             while (rs.next()) {
                 Department department = new Department();
                 department.setName(rs.getString("name"));
-                department.setLocationID(rs.getInt("locations_id"));
+                //department.setLocationID(rs.getInt("locations_id"));
                 department.setId(rs.getInt("id"));
                 departmentList.add(department);
             }
@@ -64,7 +64,7 @@ public class DepartmentsDAO implements IDepartmentDAO {
         try {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, department.getName());
-            ps.setInt(2, department.getLocationID());
+           // ps.setInt(2, department.getLocationID());
             ps.executeUpdate();
             ResultSet rs = ps.getGeneratedKeys();
             if (rs.next()) {
@@ -85,7 +85,7 @@ public class DepartmentsDAO implements IDepartmentDAO {
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setString(1, department.getName());
-            ps.setInt(2, department.getLocationID());
+           // ps.setInt(2, department.getLocationID());
             ps.setInt(3, id);
             ps.executeUpdate();
             department.setId(id);

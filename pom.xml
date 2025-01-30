@@ -40,5 +40,16 @@
       <artifactId>junit-jupiter-api</artifactId>
       <version>5.11.4</version>
     </dependency>
+    <dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>4.0.2</version>
+    </dependency>
+    <!--  https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl  -->
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>4.0.2</version>
+    </dependency>
   </dependencies>
 </project>

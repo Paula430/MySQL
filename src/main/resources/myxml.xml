@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<classes>
+<company name="CompanyName">
     <clients>
         <client id="1">
             <name>John</name>
@@ -44,12 +44,4 @@
             </department>
         </employee>
     </employees>
-    <user id="1">
-        <name>Alex</name>
-        <email>alex.example.com</email>
-        <password>alex1111</password>
-        <role id="1">
-            <rolename>admin</rolename>
-        </role>
-    </user>
-</classes>
+</company>

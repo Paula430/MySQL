@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company name="MyCompany">
+    <clients>
+        <client id="1">
+            <email>Smith</email>
+            <lastName>999999999</lastName>
+            <name>candy2@example.com</name>
+            <phoneNumber>Candy</phoneNumber>
+        </client>
+        <client id="2">
+            <email>Big</email>
+            <lastName>111111111</lastName>
+            <name>tom@example.com</name>
+            <phoneNumber>Tom</phoneNumber>
+        </client>
+    </clients>
+    <employees>
+        <employee id="1">
+            <firstname>John</firstname>
+            <lastname>Brown</lastname>
+            <email>john@example.com</email>
+            <phone>123456789</phone>
+            <hiredate>2025-01-30T20:49:49.375+01:00</hiredate>
+            <department id="1">
+                <name>IT</name>
+                <location id="2">
+                    <city>London</city>
+                    <street>River Street</street>
+                </location>
+            </department>
+        </employee>
+        <employee id="2">
+            <firstname>Alex</firstname>
+            <lastname>Smith</lastname>
+            <email>alex@example.com</email>
+            <phone>980437927</phone>
+            <hiredate>2025-01-30T20:49:49.375+01:00</hiredate>
+            <department id="1">
+                <name>IT</name>
+                <location id="2">
+                    <city>London</city>
+                    <street>River Street</street>
+                </location>
+            </department>
+        </employee>
+    </employees>
+</company>
