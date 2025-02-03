@@ -22,28 +22,29 @@ public class App {
 
         clientDAO.removeById(22);
 
+        LocationsDAO locationDAO = new LocationsDAO();
+        System.out.println(locationDAO.getEntities());
+        System.out.println(locationDAO.getEntityById(6));
+
+        Location loc = new Location(1, "Cracow","Cracovska" );
+        System.out.println(locationDAO.insert(loc));
+        locationDAO.update(5, loc);
+
+        System.out.println(locationDAO.removeById(8));
 
         DepartmentsDAO departmentsDAO = new DepartmentsDAO();
         System.out.println(departmentsDAO.getEntities());
 
         System.out.println(departmentsDAO.getEntityById(6));
 
-        Department dep = new Department("IT", 5);
+        Department dep = new Department(1, "IT", loc);
         departmentsDAO.insert(dep);
         departmentsDAO.update(8, dep);
 
         System.out.println(departmentsDAO.removeById(8));
 
 
-        LocationsDAO locationDAO = new LocationsDAO();
-        System.out.println(locationDAO.getEntities());
-        System.out.println(locationDAO.getEntityById(6));
 
-        Location loc = new Location("Cracow", "Cracovska");
-        System.out.println(locationDAO.insert(loc));
-        locationDAO.update(5, loc);
-
-        System.out.println(locationDAO.removeById(8));
 
 
     }

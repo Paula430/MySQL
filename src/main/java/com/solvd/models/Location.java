@@ -15,6 +15,7 @@ public class Location {
     public Location(String city, String street){
         this.city=city;
         this.street=street;
+
     }
 
     public Location() {

@@ -15,15 +15,16 @@ public class Department {
     private String name;
     private Location location;
 
-    public Department(String name, int locationID){
-        this.name=name;
+    public Department(int id, String name, Location location ) {
+        this.id = id;
+        this.name = name;
+        this.location = location;
     }
 
     public Department() {
     }
 
-    public Department(int id, String name, Location location) {
-        this.id = id;
+    public Department(String name, Location location ) {
         this.name = name;
         this.location = location;
     }

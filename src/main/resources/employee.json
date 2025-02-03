@@ -1,0 +1,35 @@
+{
+  "employees" : [ {
+    "id" : 1,
+    "firstName" : "John",
+    "lastName" : "Brown",
+    "email" : "john@example.com",
+    "phone" : "123456789",
+    "hireDate" : "2025-02-03",
+    "department" : {
+      "id" : 1,
+      "name" : "IT",
+      "location" : {
+        "id" : 2,
+        "city" : "London",
+        "street" : "River Street"
+      }
+    }
+  }, {
+    "id" : 2,
+    "firstName" : "Sam",
+    "lastName" : "Black",
+    "email" : "sam@example.com",
+    "phone" : "3456788911",
+    "hireDate" : "2025-02-03",
+    "department" : {
+      "id" : 2,
+      "name" : "HR",
+      "location" : {
+        "id" : 2,
+        "city" : "London",
+        "street" : "River Street"
+      }
+    }
+  } ]
+}
