@@ -32,7 +32,6 @@ public class ClientDAO implements IClientDAO {
         } finally {
             connectionPool.releaseConnection(connection);
         }
-
         return client;
     }
 
@@ -94,9 +93,7 @@ public class ClientDAO implements IClientDAO {
             ps.setString(2, client.getLastName());
             ps.setString(3, client.getEmail());
             ps.setString(4, client.getPhoneNumber());
-            ps.setInt(5, id);
             ps.executeUpdate();
-            client.setId(id);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
